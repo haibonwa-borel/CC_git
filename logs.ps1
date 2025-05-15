@@ -1,7 +1,4 @@
-﻿Get-EventLog -LogName
+﻿Get-EventLog -LogName Application | Out-File -FilePath C:\logs\logs.txt
 
-Application
+Export-Csv -Path "C:\logs\logs.txt" -NoTypeInformation
 
-Export-Csv -Path "C:\application_logs.csv"
-
--NoTypeInformation
